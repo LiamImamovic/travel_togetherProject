@@ -1,0 +1,68 @@
+#presentation{
+    .blockPres{
+        background-color: $bgColor;
+        width: $width;
+        height: $heightPres;
+        border-radius: $borderRadius;
+        box-shadow: $shadow;
+        color: $fontColor;
+        overflow: hidden;
+        
+        .contentPres{
+            display: flex;
+            padding: $paddingContentPres;
+            gap: 190px;
+        
+            .txtPres{
+                p{
+                    font-size: 1rem;
+                    padding: 20px 0;
+                }
+            }
+        
+            img{
+                width: 23%;
+                height: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px){
+    #presentation{
+        .blockPres{
+            .contentPres{
+                gap: 0;
+        
+                .txtPres{
+                    padding: 0;
+                }
+        
+                img{
+                    width: 33%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 576px){
+    #presentation{
+        .blockPres{
+            .contentPres{
+                flex-direction: column;
+                gap: 0;
+                padding: 20px;
+        
+                .txtPres{
+                    padding: 0;
+                }
+        
+                img{
+                    width: 0%;
+                }
+            }
+        }
+    }
+
+}

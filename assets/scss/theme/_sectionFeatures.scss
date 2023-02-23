@@ -1,0 +1,63 @@
+#features{
+    margin-top: 100px;
+    background-image: url(../img/wave.svg);
+    h2{
+        text-align: end;
+        font-size: 3.5rem;
+        margin-bottom: 50px;
+    }
+    h3{
+        margin: 15px 0 ;
+    }
+
+    p{
+        padding: 0 65px;
+    }
+
+    i{
+        color: $roseSaumon;
+    }
+
+    .blocFeatures{
+        background-color: $bgColor;
+        border-radius: $borderRadius;
+        position: relative;
+        top: 100px;
+        z-index: 2;
+
+        .txtFeatures{
+            padding-right: 150px;
+
+            h2{
+                text-align: start;
+                margin: 0;
+                color: $fontColor;
+                font-family: "Roboto Regular";
+                font-size: 3rem;
+            }
+
+            p{
+                padding: 0;
+                color: $fontColor;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px){
+    #features{
+            p{
+                padding: 0 20px;
+            }
+    }
+}
+
+@media screen and (max-width: 576px){
+    #features{
+        .blocFeatures{
+            .txtFeatures{
+                padding-right: 0;
+            }
+        }
+    }
+}

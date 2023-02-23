@@ -1,0 +1,28 @@
+
+body{
+    font-family: "Roboto Regular",
+}
+
+p{
+    font-family: "Roboto Light";
+}
+
+.pres-button {
+    @include button(white, black);
+}
+
+.serviceBatiment, .servicePassport, .serviceMont{
+    @include textAlign;
+}
+
+.servicePassport{
+    @include imageServices($imgPassport);
+}
+
+.serviceMont{
+    @include imageServices($imgMontgolfiere);
+}
+
+.features-button{
+    @include button(white, black);
+}

@@ -1,0 +1,277 @@
+@font-face {
+  font-family: "Roboto Regular";
+  src: url(/assets/fonts/Roboto/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: "Roboto Bold";
+  src: url(/assets/fonts/Roboto/Roboto-Bold.ttf);
+}
+@font-face {
+  font-family: "Roboto Light";
+  src: url(/assets/fonts/Roboto/Roboto-Light.ttf);
+}
+body {
+  font-family: "Roboto Regular";
+}
+
+p {
+  font-family: "Roboto Light";
+}
+
+.pres-button {
+  display: inline-block;
+  padding: 5px 15px;
+  background-color: white;
+  border: 1px solid white;
+  color: black;
+  text-decoration: none;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.7);
+}
+
+.serviceBatiment, .servicePassport, .serviceMont {
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.servicePassport {
+  background-image: url(../img/passport.jpg);
+  height: 49%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  box-shadow: 0px 5px 8px 0px #000000, inset 0 0 0 100vw rgba(0, 0, 0, 0.5);
+}
+
+.serviceMont {
+  background-image: url(../img/montgolfiere.jpg);
+  height: 49%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  box-shadow: 0px 5px 8px 0px #000000, inset 0 0 0 100vw rgba(0, 0, 0, 0.5);
+}
+
+.features-button {
+  display: inline-block;
+  padding: 5px 15px;
+  background-color: white;
+  border: 1px solid white;
+  color: black;
+  text-decoration: none;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.7);
+}
+
+#headerMain {
+  margin-bottom: 30px;
+}
+#headerMain .nav-link {
+  margin-right: 20px;
+  font-family: "Roboto Light";
+}
+
+#presentation .blockPres {
+  background-color: #E7816B;
+  width: 100%;
+  height: 450px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  color: white;
+  overflow: hidden;
+}
+#presentation .blockPres .contentPres {
+  display: flex;
+  padding: 75px 100px 0 70px;
+  gap: 190px;
+}
+#presentation .blockPres .contentPres .txtPres p {
+  font-size: 1rem;
+  padding: 20px 0;
+}
+#presentation .blockPres .contentPres img {
+  width: 23%;
+  height: 100%;
+}
+
+@media screen and (max-width: 992px) {
+  #presentation .blockPres .contentPres {
+    gap: 0;
+  }
+  #presentation .blockPres .contentPres .txtPres {
+    padding: 0;
+  }
+  #presentation .blockPres .contentPres img {
+    width: 33%;
+  }
+}
+@media screen and (max-width: 576px) {
+  #presentation .blockPres .contentPres {
+    flex-direction: column;
+    gap: 0;
+    padding: 20px;
+  }
+  #presentation .blockPres .contentPres .txtPres {
+    padding: 0;
+  }
+  #presentation .blockPres .contentPres img {
+    width: 0%;
+  }
+}
+#services {
+  margin-top: 100px;
+}
+#services h2 {
+  font-size: 3.5rem;
+}
+#services .serviceBatiment {
+  background-image: url(/assets/img/homme-assis-batiment.jpg);
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  box-shadow: 0px 5px 8px 0px #000000, inset 0 0 0 100vw rgba(0, 0, 0, 0.5);
+  background-size: cover;
+}
+#services .serviceMont {
+  margin-top: 1.25%;
+}
+#services a {
+  text-decoration: none;
+  color: white;
+}
+#services a .accoladeServices {
+  color: #E7816B;
+}
+
+@media screen and (max-width: 992px) {
+  #services {
+    margin-top: 50px;
+  }
+  #services h2 {
+    font-size: 2.5rem;
+  }
+  #services .serviceBatiment {
+    height: 80vh;
+  }
+  #services .serviceMont {
+    margin-top: 3.5%;
+  }
+}
+@media screen and (max-width: 576px) {
+  #services {
+    margin-bottom: auto;
+  }
+  #services .serviceBatiment, #services .serviceBatiment, #services .serviceMont {
+    height: 30vh;
+  }
+}
+#features {
+  margin-top: 100px;
+  background-image: url(../img/wave.svg);
+}
+#features h2 {
+  text-align: end;
+  font-size: 3.5rem;
+  margin-bottom: 50px;
+}
+#features h3 {
+  margin: 15px 0;
+}
+#features p {
+  padding: 0 65px;
+}
+#features i {
+  color: #E7816B;
+}
+#features .blocFeatures {
+  background-color: #E7816B;
+  border-radius: 10px;
+  position: relative;
+  top: 100px;
+  z-index: 2;
+}
+#features .blocFeatures .txtFeatures {
+  padding-right: 150px;
+}
+#features .blocFeatures .txtFeatures h2 {
+  text-align: start;
+  margin: 0;
+  color: white;
+  font-family: "Roboto Regular";
+  font-size: 3rem;
+}
+#features .blocFeatures .txtFeatures p {
+  padding: 0;
+  color: white;
+}
+
+@media screen and (max-width: 992px) {
+  #features p {
+    padding: 0 20px;
+  }
+}
+@media screen and (max-width: 576px) {
+  #features .blocFeatures .txtFeatures {
+    padding-right: 0;
+  }
+}
+#footerMain {
+  background-color: #1D1D1F;
+  padding-bottom: 20px;
+  position: relative;
+  z-index: 1;
+}
+#footerMain img {
+  width: 300px;
+}
+#footerMain nav {
+  padding: 200px 0 20px;
+}
+#footerMain nav .nav-link {
+  color: white;
+}
+#footerMain hr {
+  color: white;
+  width: 90%;
+  margin: auto;
+}
+#footerMain .contactFooter {
+  color: white;
+  padding-top: 20px;
+}
+#footerMain .contactFooter h4 {
+  font-size: 1rem;
+}
+#footerMain .contactFooter p {
+  margin: 0;
+  font-family: "Roboto Light";
+}
+#footerMain .contactFooter a {
+  color: white;
+  text-decoration: none;
+  font-family: "Roboto Light";
+}
+#footerMain .contactFooter .fa-brands {
+  color: white;
+}
+#footerMain .contactFooter .fa-brands:hover {
+  color: #E7816B;
+}
+
+@media screen and (max-width: 992px) {
+  #footerMain img {
+    width: 200px;
+  }
+  #footerMain nav {
+    padding: 150px 0 50px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

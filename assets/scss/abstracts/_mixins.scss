@@ -1,0 +1,47 @@
+// SECTION PRES 
+@mixin button($bgBtn, $colorBtn) {
+    display: inline-block;
+    padding: 5px 15px;
+    background-color: $bgBtn;
+    border: 1px solid $bgBtn;
+    color: $colorBtn;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: $btnShadow;
+    }
+
+
+// SECTION SERVICES
+
+@mixin textAlign{
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+@mixin imageServices($url){
+    background-image: $url;
+    height: 49%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    box-shadow: $shadowServices, inset 0 0 0 100vw rgba(0,0,0,0.5);
+}
+// ASSOMBRIR LES IMAGES !!!!
+
+// FEATURES
+
+@mixin button2($bgBtn, $colorBtn) {
+    display: inline-block;
+    padding: 5px 15px;
+    background-color: $bgBtn;
+    border: 1px solid $bgBtn;
+    color: $colorBtn;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: $btnShadow;
+    }
